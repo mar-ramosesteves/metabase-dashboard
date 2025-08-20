@@ -8,7 +8,7 @@ services:
       - key: MB_DB_TYPE
         value: h2
       - key: MB_DB_FILE
-        value: ./metabase.db
+        value: /app/metabase.db
       - key: MB_ENCRYPTION_SECRET_KEY
         value: 12345678901234567890123456789012
       - key: MB_JETTY_PORT
