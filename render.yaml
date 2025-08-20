@@ -11,3 +11,7 @@ services:
         value: ./metabase.db
       - key: MB_ENCRYPTION_SECRET_KEY
         value: 12345678901234567890123456789012
+      - key: MB_JETTY_PORT
+        value: 3000
+      - key: MB_JETTY_HOST
+        value: 0.0.0.0
