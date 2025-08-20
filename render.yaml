@@ -4,9 +4,10 @@ services:
     env: docker
     plan: free
     dockerfilePath: ./Dockerfile
-    dockerCommand: java -jar metabase.jar
     envVars:
       - key: MB_DB_TYPE
         value: h2
       - key: MB_DB_FILE
-        value: /metabase-data/metabase.db
+        value: ./metabase.db
+      - key: MB_ENCRYPTION_SECRET_KEY
+        value: 12345678901234567890123456789012
