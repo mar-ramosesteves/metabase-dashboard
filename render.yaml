@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: metabase-dashboard
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerCommand: java -jar metabase.jar
+    envVars:
+      - key: MB_DB_TYPE
+        value: h2
+      - key: MB_DB_FILE
+        value: /metabase-data/metabase.db
